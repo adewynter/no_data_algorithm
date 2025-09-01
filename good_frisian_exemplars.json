@@ -1,0 +1,127 @@
+[{
+    "Prompt": "Beäntwurdzje asjebleaft de folgjende fraach troch stap foar stap te redenearjen. Kinne wy konkludearje út \"In man reparearret in fytsbân wylst syn klant him fragen stelt.\" dat \"Dizze man in fyts reparearje kin.\"?\nOpsjes:\n- ja\n- nee\n- it is net mooglik om te sizzen. Stap-foar-stap redenearring:",
+    "Output": "Stap-foar-stap redenearring:\n\n1. Yn de sin \"In man reparearret in fytsbân wylst syn klant him fragen stelt,\" wurdt dúdlik dat de man dwaande is mei it reparearjen fan in fytsbân.\n2. It feit dat hy in fytsbân reparearret, jout oan dat hy op syn minst wat kennis of feardichheden hat op it mêd fan fytsreparaasje.\n3. Mar, de sin jout net oan hoe goed of effektyf hy de reparaasje útfiert. It kin wêze dat hy it goed docht, mar it kin ek wêze dat hy it net goed docht.\n4. De sin befettet gjin ynformaasje oer syn ûnderfining, ekspertize, of oft de reparaasje slagget.\n\nKonklúzje:\n- it is net mooglik om te sizzen.",
+    "Source": "OpenOrca",
+    "Label": 1,
+    "Rubric": {
+        "c1": 1,
+        "c1_reason": "",
+        "c2a": 1,
+        "c2a_reason": "",
+        "c2b": 1,
+        "c2b_reason": "",
+        "c2": 1,
+        "c2_reason": "",
+        "c3": 1,
+        "c3_reason": "",
+        "c4": 1,
+        "c4_reason": "",
+        "c5": 1,
+        "c5_reason": ""
+    },
+    "Exemplars": {
+        "Prompt": "Premisse: \"Man dy't docht as in rockstjer.\"\nHypoteze: \"In persoan dy't ferklaaid is.\"\nWitte wy dat de hypoteze folget út de premisse? Stap foar stap antwurd:",
+        "Output": "Stap 1: Begryp de premisse.\nDe premisse seit \"Man dy't docht as in rockstjer.\" Dit betsjut dat der in man is dy't him gedraacht of optreedt as in rockstjer.\n\nStap 2: Begryp de hypoteze.\nDe hypoteze is \"In persoan dy't ferklaaid is.\" Dit betsjut dat der in persoan is dy't oare klean oan hat om der út te sjen as immen oars.\n\nStap 3: Analysearje de relaasje tusken de premisse en de hypoteze.\nIn man dy't him gedraacht as in rockstjer kin op ferskate manieren dwaan. Hy kin bygelyks de hâlding en it gedrach fan in rockstjer oannimme, mar hy hoecht net perfoarst ferklaaid te wêzen. Hy kin rockstjer-eftige klean oan ha (ferklaaid wêze) of gewoan de hâlding en it gedrach fan in rockstjer oannimme sûnder spesjale klean.\n\nStap 4: Konklúzje.\nDe hypoteze \"In persoan dy't ferklaaid is\" folget net needsaaklik út de premisse \"Man dy't docht as in rockstjer.\" It is mooglik dat hy ferklaaid is, mar it is net de iennige mooglikheid. De man kin ek as in rockstjer dwaan sûnder spesjale klean.\n\nDus, wy kinne net mei wissichheid sizze dat de hypoteze folget út de premisse."
+    }
+}, {
+    "Prompt": "Der binne jûn n manlju en n froulju.\nEltsenien fan 'e froulju jout alle manlju in ranglist neffens har foarkar\n(har earste kar, har twadde kar, ensfh.).\nOp deselde wize sortearret elke man alle froulju neffens\nsyn foarkar. It doel is om n houliken te regeljen op sa'n wize dat as in man m\nbeskôget guon frou w mear dan syn frou, en w beskôget m mear dan har man, in nij houlik plakfynt tusken w en m. As w har man mear beskôget, bliuwt se mei him troud. Dit probleem hat altyd in oplossing en jo taak is om ien te finen.\nYnfier\nDe earste rigel befettet in posityf integer t ≤ 100\ndat it oantal testgefallen oanjout. Elk testgefal is in\nfoarbyld fan it stabile houliksprobleem lykas hjirboppe definiearre.\nDe earste rigel fan elk testgefal is in posityf integer\nn ≤ 500 (it oantal houliken om te finen).\nDe folgjende n rigels binne de foarkarren fan de froulju: de i-de\nrigel befettet it nûmer i (wat betsjut dat dit de list is jûn\ntroch de i-de frou) en de nûmers fan de manlju\n(de earste kar fan de i-de frou, de twadde kar, ensfh.).\nDêrnei komme de foarkarren fan de manlju yn itselde formaat.\n\n\nUtfier\nFoar elk testgefal print n rigels, wêrby't elke rigel\ntwa nûmers befettet m en w, wat betsjut dat\nde man mei nûmer m en de frou mei nûmer w moatte trouwe.\n\n\nFoarbyld\n\nYnfier:\n2\n4\n1 4 3 1 2\n2 2 1 3 4\n3 1 3 4 2\n4 4 3 1 2\n1 3 2 4 1\n2 2 3 1 4\n3 3 1 2 4\n4 3 2 4 1\n7\n1 3 4 2 1 6 7 5\n2 6 4 2 3 5 1 7\n3 6 3 5 7 2 4 1\n4 1 6 3 2 4 7 5\n5 1 6 5 3 4 7 2\n6 1 7 3 4 5 6 2\n7 5 6 2 4 3 7 1\n1 4 5 3 7 2 6 1\n2 5 6 4 7 3 2 1\n3 1 6 5 4 3 7 2\n4 3 5 6 7 2 4 1\n5 1 7 6 4 3 5 2\n6 6 3 7 5 2 4 1\n7 1 7 4 2 6 5 3\n\n\n\nUtfier:\n1 3\n2 2\n3 1\n4 4\n1 4\n2 5\n3 1\n4 3\n5 7\n6 6\n7 2\n\n\nWarskôging: grutte Ynfier/Utfier data, wês foarsichtich mei bepaalde talen",
+    "Output": "Om dit probleem op te lossen, kinne wy it Gale-Shapley algoritme brûke, dat garandearret dat wy in stabile houliksoplossing fine. Hjir is de stap-foar-stap útlis fan it algoritme en de ymplemintaasje yn Python:\n\n1. **Foar elke testgefal:**\n    - Lês it oantal houliken `n`.\n    - Lês de foarkarslist fan froulju en manlju.\n    \n2. **Stel de gegevens foar:**\n    - In list foar de foarkar fan elke frou.\n    - In list foar de foarkar fan elke man.\n    - In list om de status fan elke man (frij of troud) by te hâlden.\n    - In list om de status fan elke frou (frij of troud) by te hâlden.\n    - In list dy't de hjoeddeistige partner fan elke frou byhâldt.\n    \n3. **Gale-Shapley algoritme:**\n    - Wylst der noch frije manlju binne dy't noch net elkenien frege hawwe:\n        - De man freget syn topkandidaat dy't hy noch net frege hat.\n        - As de frou frij is, foarmje in pear.\n        - Oars, as de frou al in partner hat, kontrolearje oft se dizze man leaver hat as har hjoeddeistige partner.\n            - As ja, foarmje in nij pear en meitsje har âlde partner frij.\n            - As nee, giet de man troch nei syn folgjende foarkar.\n            \n4. **Utfier:**\n    - Foar elke frou dy't in partner hat, jou it pear út.\n\nHjir is de Python-codesnippet dy't dit algoritme ymplementearret:\n\n```python\ndef gale_shapley(n, women_pref, men_pref):\n    # List om de status fan de froulju by te hâlden (har hjoeddeistige partner)\n    women_partner = [-1] * n\n    # List om de status fan de manlju by te hâlden (0 = frij, 1 = troud)\n    men_free = [False] * n\n    # List om it oantal froulju dat elke man frege hat by te hâlden\n    men_next_proposal = [0] * n\n    \n    # Wylst der frije manlju binne dy't noch net elkenien frege hawwe\n    while False in men_free:\n        for m in range(n):\n            if not men_free[m]:\n                # De man freget syn topkandidaat dy't hy noch net frege hat\n                w = men_pref[m][men_next_proposal[m]]\n                men_next_proposal[m] += 1\n                \n                if women_partner[w] == -1:\n                    # As de frou frij is, foarmje in pear\n                    women_partner[w] = m\n                    men_free[m] = True\n                else:\n                    # Oars kontrolearje oft se dizze man leaver hat as har hjoeddeistige partner\n                    current_partner = women_partner[w]\n                    if women_pref[w].index(m) < women_pref[w].index(current_partner):\n                        # As ja, foarmje in nij pear en meitsje har âlde partner frij\n                        women_partner[w] = m\n                        men_free[m] = True\n                        men_free[current_partner] = False\n    \n    # Utfier it resultaat\n    result = []\n    for w in range(n):\n        result.append((women_partner[w]+1, w+1))\n    return result\n\ndef main():\n    import sys\n    input = sys.stdin.read\n    data = input().strip().split()\n    \n    index = 0\n    t = int(data[index])\n    index += 1\n    results = []\n    \n    for _ in range(t):\n        n = int(data[index])\n        index += 1\n        \n        women_pref = []\n        for i in range(n):\n            women_pref.append([int(x)-1 for x in data[index + 1:index + n + 1]])\n            index += n + 1\n        \n        men_pref = []\n        for i in range(n):\n            men_pref.append([int(x)-1 for x in data[index + 1:index + n + 1]])\n            index += n + 1\n        \n        results.append(gale_shapley(n, women_pref, men_pref))\n    \n    for result in results:\n        for pair in result:\n            print(pair[0], pair[1])\n\nif __name__ == \"__main__\":\n    main()\n```\n\nDit programma lêst de ynfier, brûkt it Gale-Shapley algoritme om stabile houliken te finen, en print de resultaten. Om it programma út te fieren, moat de ynfier yn de krekte opmaak",
+    "Source": "OpenCode",
+    "Label": 0,
+    "Rubric": {
+        "c1": 1,
+        "c1_reason": "",
+        "c2a": 1,
+        "c2a_reason": "",
+        "c2b": 0,
+        "c2b_reason": "The Frisian response provides a clear explanation and a mostly correct implementation of the Gale-Shapley algorithm, but the code is incomplete due to a truncated main() function and a missing closing quotation.",
+        "c2": 1,
+        "c2_reason": "",
+        "c3": 1,
+        "c3_reason": "The natural language explanation is fluent and natural in Western Frisian",
+        "c4": 0,
+        "c4_reason": "The Frisian output is cut off",
+        "c5": 1,
+        "c5_reason": ""
+    },
+    "Exemplars": {
+        "Prompt": "Jou in tekenrige s, dy't lytse letters fan it Ingelske alfabet en punten (.) befettet (bgl.: abc.d.ee.g). Dyn taak is om de ûndertring '..' te ferfangen troch in ûndertring '.' yn de jûne tekenrige, dat wol sizze, de string moat gjin twa opienfolgjende punten befetsje. Do moatst it oantal ferfangings berekkenje dat nedich is foar dizze taak.\n\nDe earste rigel befettet twa heeltallen L dy't de lingte fan de string oanjout en N dy't it oantal fragen oer de string oanjout. De twadde rigel fan de ynfier befettet de string s.\nElke fan de folgjende N rigels befettet 2 ynfierings: k (in heeltal) en p (lytse letter / puntsje).\nDyn taak is om de k-de letter yn de jûne string te ferfangen troch de jûne letter p en it oantal ferfangings te tellen.\nFoar de folgjende fraach brûkst de string dy't yn de foarige fraach oanpast is.\n\nFOARBYLD YNFIER\n4 4\n.cc.\n2 .\n3 .\n2 a\n1 a\n\nFOARBYLD ÚTFIER\n1\n3\n1\n1",
+        "Output": "Litte we earst begjinne mei it ferfangen fan alle opienfolgjende punten yn de string '..' troch in ienkele punt '.' en it oantal ferfangings telle. Dan sille wy de opjûne fragen ien foar ien ferwurkje.\n\n### Stap 1: Oarspronklike ferfanging\n\nDe jûne string is `.cc.`. Der binne gjin opienfolgjende '..' stringen, dus it oantal ferfangings is 0.\n\n### Stap 2: Ferwurkjen fan de fragen\n\nElke fraach jout oan hoe't we in spesifike letter yn 'e string feroarje moatte, en dêrnei moatte we it oantal ferfangings fan '..' nei '.' wer berekkenje. Hjir binne de stappen:\n\n#### Fraach 1\n- **Input:** 2 `.`\n- **String foar ferfanging:** `.cc.`\n- **String nei ferfanging:** `.c..`\n- **Opienfolgjende '..':** 1\n- **Ferfanging nedich:** 1\n\n#### Fraach 2\n- **Input:** 3 `.`\n- **String foar ferfanging:** `.c..`\n- **String nei ferfanging:** `.c..`\n- **Opienfolgjende '..':** 1\n- **Ferfanging nedich:** 1\n- **Totaal ferfangings:** 1 (bliuwt itselde)\n\n#### Fraach 3\n- **Input:** 2 `a`\n- **String foar ferfanging:** `.c..`\n- **String nei ferfanging:** `.a..`\n- **Opienfolgjende '..':** 1\n- **Ferfanging nedich:** 1\n- **Totaal ferfangings:** 1 (bliuwt itselde)\n\n#### Fraach 4\n- **Input:** 1 `a`\n- **String foar ferfanging:** `.a..`\n- **String nei ferfanging:** `a.a.`\n- **Opienfolgjende '..':** 1\n- **Ferfanging nedich:** 1\n- **Totaal ferfangings:** 1 (bliuwt itselde)\n\n### Resultaat\n\n- **Útgong foar Fraach 1:** 1\n- **Útgong foar Fraach 2:** 1\n- **Útgong foar Fraach 3:** 1\n- **Útgong foar Fraach 4:** 1\n\nHjir is de útfier:\n\n```\n1\n1\n1\n1\n```"
+    }
+}, {
+    "Prompt": "Om syn resinte promoasje te fieren, besleat Arthur himsels te traktearjen op in diner yn in moai restaurant. Hy bestelde in lekkere foargerjocht foar €8, in hearlike ribeye steak as haadgerjocht foar €20, dronk twa glêzen goede reade wyn by it iten foar €3 elk, en in stikje karameltaart as dessert foar €6. Hy brûkte in bon foar de helte fan de priis fan syn haadgerjocht, mar hy joech syn servearster wol in tips fan 20% fan wat de folsleine kosten fan syn miel west hiene sûnder de koarting. Hoefolle, ynklusyf de tip, hat Arthur útjûn oan it diner?",
+    "Output": "Litte wy de kosten fan it diner stap foar stap berekkenje.\n\n**Stap 1: Berekenje de folsleine kosten fan it miel sûnder koarting.**\n- Foargerjocht: €8\n- Haadgerjocht: €20\n- Wyn: 2 glêzen × €3/glês = €6\n- Dessert: €6\n- Totaal sûnder koarting: €8 + €20 + €6 + €6 = €40\n\n**Stap 2: Berekenje de koarting op it haadgerjocht.**\n- Koarting op haadgerjocht: 50% fan €20 = 0.5 × €20 = €10\n\n**Stap 3: Berekenje de kosten fan it miel mei de koarting.**\n- Kosten haadgerjocht nei koarting: €20 - €10 = €10\n- Totaal mei koarting: €8 (foargerjocht) + €10 (haadgerjocht nei koarting) + €6 (wyn) + €6 (dessert) = €30\n\n**Stap 4: Berekenje de tip op de folsleine kosten sûnder de koarting.**\n- Tip: 20% fan €40 = 0.2 × €40 = €8\n\n**Stap 5: Berekenje de totale útjefte ynklusyf de tip.**\n- Totaal mei koarting: €30\n- Tip: €8\n- Totale útjefte: €30 + €8 = €38\n\nArthur hat yn totaal €38 útjûn oan it diner, ynklusyf de tip.",
+    "Source": "GSM8K",
+    "Label": 0,
+    "Rubric": {
+        "c1": 1,
+        "c1_reason": "",
+        "c2a": 1,
+        "c2a_reason": "",
+        "c2b": 1,
+        "c2b_reason": "",
+        "c2": 1,
+        "c2_reason": "",
+        "c3": 0,
+        "c3_reason": "\"tip\" is not a common Frisian word, it should be 'fooi'",
+        "c4": 1,
+        "c4_reason": "",
+        "c5": 1,
+        "c5_reason": ""
+    },
+    "Exemplars": {
+        "Prompt": "Haw krekt in swieneboarch fan 10 pûn bysnien en ik ha in bulte swineskine oer. Ik bin gjin leafhawwer fan swinepoat, wat kin ik der oars mei meitsje?",
+        "Output": "Der binne ferskate manieren om swineskine te brûken, sels as jo gjin leafhawwer binne fan swinepoat. Hjir binne wat ideeën:\n\n1. **Bouillon (Bouillon of Stock):** Swineskine is geweldich foar it meitsjen fan hearlike en rike bouillon. Jo kinne de skine yn wetter mei griente en krûden koekje om in rike basis te meitsjen foar soepen en stoofpotten.\n\n2. **Smaak tafoegje oan rys of beannen:** Jo kinne in stikje swineskine tafoegje oan rys of beannen wylst se koekje om ekstra smaak ta te foegjen. It sil in rike en smokige smaak jaan oan jo gerjochten.\n\n3. **Krokante swineskine (Pork Cracklings of Chicharrones):** Jo kinne de swineskine frituerje oant se krokant binne. Se meitsje in hearlike snack as se goed tariede wurde.\n\n4. **Bakken yn iten:** De swineskine kin brûkt wurde om smaak ta te foegjen oan ferskate bakte gerjochten. Jo kinne it tafoegje oan casseroles, stoofpotten, of sels risotto foar in ekstra smaakdiminsje.\n\n5. **Ferwurkje yn saus:** Jo kinne de swineskine brûke om rike, smaakfulle sausen te meitsjen. Koekje de skine mei tomaten, sipels, knoflook en krûden om in smaakfolle basis te meitsjen foar pasta- of fleissausen.\n\n6. **Swineskine jelly:** As jo swineskine lang koekje, frijlit it gelatine. Dit kin brûkt wurde om jelly of aspic te meitsjen, dat in tradisjoneel gerjocht is yn in protte keukens.\n\nMei dizze ideeën kinne jo de swineskine op in nuttige en smaakfolle manier brûke, sels as jo net fan swinepoat hâlde."
+    }
+}, {
+    "Prompt": "In oar lyts bist dat tigeren ite yn Ranthambhore (in natuerpark yn noardlik Yndia) is it stekelbaarch. Dizze bisten binne rûnom yn Yndia ferspraat yn iepen gebieten en greidlannen; se libje faak yn de grûn en tusken stiennen. Se binne goede gravers, en yn Ranthambhore binne se nachtdieren; se komme allinnich nachts bûten. Se weagje 12 oant 16 kilogram en berikke in lingte fan 80 oant 90 sintimeter. Se libje meastentiids fan griente en fruit en lykje in goed rookfermogen te hawwen. Stekelbargen ferdigenje harsels as se oanfallen wurde troch werom te gean mei har stekels omheech, faak mei in frjemd lûd. Faak haw ik de resten fan stekels fûn wêr't in tiger in stekelbaarch deamakke en opiten hat, mar ik haw noch noait de deaslach sels sjoen. Nettsjinsteande de stekels sille ûnderfining tigeren besykje dúdlik te deadzjen troch de kop fan 'e stekelbaarch te bitsjen, syn swakke plak. Mar de stekels binne tige skerp en kinne pynlike ferwûningen feroarsaakje by jonge tigeren. As de stekels tige djip sitten of yn 'e poat fan de tiger fêst sitte, sil er besykje se derút te lûken. Faak sil er súksesfol wêze, en de wûne sil better wurde. Mar, as de stekels tige djip sitten of yn 'e hals of mûle fan de tiger sitte, wêr’t se net berikt wurde kinne, sil de wûne faak min wurde. As dit bart, hat de tiger pine en is minder yn steat om bisten te jeien. It moat op syk nei makliker proai en kin sa nei kij oan 'e rânen fan it bosk sykje. Fan hjirút is it mar in lytse stap om in minske-iter te wurden. It wurd \"quill\" hjir betsjut _ . A) tosken fan in stekelbaarch B) fearren op in stekelbaarch C",
+    "Output": "B) fearren op in stekelbaarch",
+    "Source": "OpenOrca",
+    "Label": 0,
+    "Rubric": {
+        "c1": 1,
+        "c1_reason": "",
+        "c2a": 0,
+        "c2a_reason": "The model fail to provide reasons and only provided a curt, short response",
+        "c2b": 0,
+        "c2b_reason": "The model incorrectly selected \"C) fearren op in stekelbaarch\" (feathers) as the meaning of \"quill\" in Western Frisian, mislabeling option B as C and failing to recognize the text’s description of quills as sharp, needle-like structures",
+        "c2": 1,
+        "c2_reason": "",
+        "c3": 1,
+        "c3_reason": "",
+        "c4": 1,
+        "c4_reason": "",
+        "c5": 1,
+        "c5_reason": ""
+    },
+    "Exemplars": {
+        "Prompt": "Jury hat in polynoom f(x) = a_0 + a_1 ⋅ x + a_2 ⋅ x^2 + ... + a_k ⋅ x^k keazen. k ≤ 10 en alle a_i binne hiele getallen en 0 ≤ a_i < 10^6 + 3. It is garandearre dat der op syn minst ien i is sadat a_i > 0.\n\nNo wol de jury datsto sa'n hiele x_0 fynst sadat f(x_0) ≡ 0 mod (10^6 + 3) of meldest dat der gjin sa'n x_0 is.\n\nDo kinst net mear as 50 fragen stelle: do frege nei de wearde x_q en de jury fertelt dy de wearde f(x_q) mod (10^6 + 3).\n\nTink derom dat it printsjen fan it antwurd net telt as in fraach.\n\nYnteraksje\n\nOm in fraach te stellen, print \"? x_q\" (0 ≤ x_q < 10^6 + 3). De rjochter sil reagearje mei in ienich hiele getal f(x_q) mod (10^6 + 3). As do ea in resultaat fan −1 krijst (om't do in ûnjildige fraach print hast), stopje dan fuortendaliks om oare ferifikaasjes foar te kommen.\n\nNei it printsjen fan in fraach net ferjitte om in ein fan rigel te printsjen en de útfier te flushen. Oars, kinst Idleness limit oerskeakelje krije. Om dit te dwaan, brûk:\n\n  * fflush(stdout) of cout.flush() yn C++;\n  * System.out.flush() yn Java;\n  * flush(output) yn Pascal;\n  * stdout.flush() yn Python;\n  * sjoch de dokumintaasje foar oare talen.\n\nAs do klear bist om te antwurdzjen, print dan \"! x_0\" wêr x_0 it antwurd is of -1 as der gjin sa'n x_0 is.\n\nDo kinst op syn meast 50 fragen stelle per testgefal.\n\nHack Format\n\nOm te hacken, brûk it folgjende formaat.\n\nDe ienige rigel moat 11 hiele getallen befetsje a_0, a_1, ..., a_{10",
+        "Output": "Om it probleem te fersimpeljen, sille wy brûke fan de eigenskippen fan modulo-aritmetyk en de eigenskippen fan polynoomfunksjes. Wy sille 50 fragen brûke om wearden te sammeljen dy't ús helpe om in nulpunt te finen foar de jûn polynoom modulo \\(10^6 + 3\\).\n\nIn oantal wichtige oerwagings binne dat:\n1. Alle koeffisjinten \\(a_i\\) binne hiele getallen binnen it berik [0, \\(10^6 + 2\\)].\n2. De graad fan de polynoom \\(k\\) is op syn meast 10.\n3. Wy moatte in integer fine \\((x_0)\\) sadat f(x_0) ≡ 0 (mod \\(10^6 + 3)).\n\n### Stap-foar-stap oplossing\n\n1. **Bepaling fan in Goede Startpunt**: Wy sille begjinne mei fragen stellen by guon ynteressante wearden lykas x = 0, x = 1, ..., x = k+1 (om't k ≤ 10).\n2. **Interpolation metoade**: Mei genôch punten kinne wy in tige goede yndikaasje krije oer hoe't dizze polynomial fungeart troch Lagrange interpolation of troch numerike metoades as Newton's metoade.\n\nHjir is de stappenplan:\n\n- Stel earste fragen foar yntiale punten om wat basiswearden te krijen.\n- As ien fan dy punten fuortendaliks f(x_q) ≡ 0 (mod \\(10^6 + 3)), hawwe wy ús antwurd krigen.\n- Brûk it Newton's Metoade of oare numerike root-finding techniken mei dizze gegevens hieltyd mear ynteraktive fragen oan 'e rjochter side te stellen oant wy tichtby genôch binne by x_0.\n\n### Implementaasje\n\nLitte wy sjen nei in mooglike implementaasje yn Python:\n\n```python\nimport sys\ninput = sys.stdin.read\noutput = sys.stdout.write\n\ndef query(x):\n    output(f\"? {x}\\n\")\n    sys.stdout.flush()\n    res = int(input().strip())\n    return res\n\ndef solve():\n    MODULO = 1000003\n    \n    # Asking the first few points\n    values_at_points = []\n    \n    for i in range(11):\n        val_at_i = query(i)\n        values_at_points.append((i, val_at_i))\n        \n        if val_at_i % MODULO == 0:\n            print(f\"! {i}\")\n            return\n            \n    # Applying some degree of numerical method like Newton's to refine zero point finding\n    \nsolve()\n```\n\nDit skelet lit sjen hoe't jo earste basispunten kinne besykje en nei antwurden sykje dy't foldogge oan `f(x_q) ≡ zero`. Oanfolje kin wêze mei mear yntinsive numerike techniken basearre op reaksjes út dizze queries.\n\nAs jo ​​in bewiisd plan folgje en goed gebrûk meitsje fan modulo arithmetyske eigenskippen neist wurklik data-analyse op fûn waarden, sil it makliker wêze om solution fine binnen limytvragen!"
+    }
+}, {
+    "Prompt": "Der binne 25 ferskillende lagen stien yn 'e lagen fan in canyon. Fiif fan de lagen binne kalkstien. De helte fan de rest is sânstien. Fjouwer fan de oerbliuwende binne kwarts. De helte fan de rest is leiskalk. De rest binne allegear ferskillende soarten stien. Hoefolle soarten stiennen besteane út mar ien laach yn 'e lagen fan de canyon?",
+    "Output": "Litte we it stap foar stap útrekkenje.\n\n1. Der binne yn totaal 25 lagen.\n2. Dêrfan binne 5 kalkstien:\n   \\( 25 - 5 = 20 \\) lagen oer.\n3. De helte fan de rest is sânstien:\n   \\( \\frac{20}{2} = 10 \\) sânstienlagen, \n   \\( 20 - 10 = 10 \\) lagen oer.\n4. Fjouwer fan de oerbleaune lagen binne kwarts:\n   \\( 10 - 4 = 6 \\) lagen oer.\n5. De helte fan de rest is leiskalk:\n   \\( \\frac{6}{2} = 3 \\) leiskalklagen,\n   \\( 6 - 3 = 3 \\).\n\nDe oare trije soarten stiennen besteane elk út mar ien laach, dus der binne trije ferskillende soarten stien dy't elk út in inkeld laach besteane.\n\nIt antwurd is: Der binne trije soarten stiennen dy't út mar ien laach besteane yn 'e canyon.",
+    "Source": "GSM8K",
+    "Label": 1,
+    "Rubric": {
+        "c1": 1,
+        "c1_reason": "",
+        "c2a": 1,
+        "c2a_reason": "",
+        "c2b": 1,
+        "c2b_reason": "",
+        "c2": 1,
+        "c2_reason": "",
+        "c3": 1,
+        "c3_reason": "",
+        "c4": 1,
+        "c4_reason": "",
+        "c5": 1,
+        "c5_reason": ""
+    },
+    "Exemplars": {
+        "Prompt": "John kin 200 slachjes per minút spylje. As hy 2 oeren deis spilet foar 3 dagen, hoefolle slachjes spilet er dan?",
+        "Output": "As John 200 slachjes per minút spylje kin en hy 2 oeren deis spilet foar 3 dagen, dan kinne wy berekkenje hoefolle slachjes er yn totaal spilet.\n\nEarst rekkenje wy út hoefolle minuten John per dei spilet:\n2 oeren * 60 minuten = 120 minuten\n\nDan bepale wy hoefolle slachjes hy per dei docht:\n200 slachjes/minút * 120 minuten = 24.000 slachjes\n\nNo ferfiiffâldigje wy dit tal troch it oantal dagen dat er spilet (3 dagen):\n24.000 slachjes/dei * 3 dagen = 72.000 slachjes\n\nDus, John sil yn totaal 72.000 slachjes spylje yn dy trije dagen."
+    }
+}
+]
