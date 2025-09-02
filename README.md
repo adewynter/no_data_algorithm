@@ -20,6 +20,8 @@ If you find this paper/code useful, feel free to cite this paper:
 }
 ```
 
+>_Note_: the original paper uses φ as the flip rate. The code implementation uses 1 - φ for readability. 
+
 # Licence
 
 MIT Licence for everything that is not part of the Frisian data. The Frisian data was sourced from [OpenOrca](https://huggingface.co/datasets/Open-Orca/OpenOrca), [MMLU](https://huggingface.co/datasets/cais/mmlu), [OpenCode](https://huggingface.co/datasets/nvidia/OpenCodeReasoning), and [WildChat](https://huggingface.co/datasets/allenai/WildChat-1M). They contain their own licences.
