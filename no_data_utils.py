@@ -2,7 +2,7 @@ from sklearn.metrics import f1_score, accuracy_score
 from collections import Counter
 
 
-def print_metrics(labels, successes, test_set, suff, flips=None, return_instead=False):
+def print_metrics(labels, successes, test_set, suff, flips=None, return_instead=False, is_kary=False):
     """ 
     If flips is None it will only print acc, f1, succ.
     successes must be a summable array
@@ -12,7 +12,7 @@ def print_metrics(labels, successes, test_set, suff, flips=None, return_instead=
     Y = [int(p[-1]) for p in test_set]
     _good_labels = [int(g) for g in labels]
     acc = round(accuracy_score(Y, _good_labels), 3)
-    f1 = round(f1_score(Y, _good_labels)*100., 3)
+    f1 = round(f1_score(Y, _good_labels, average='binary' if not is_kary else 'macro')*100., 3)
     succ = round(sum(successes)*100/len(test_set), 3)
     if flips is not None:
         flips = [int(g[0]) for g in flips]
@@ -26,7 +26,7 @@ def print_metrics(labels, successes, test_set, suff, flips=None, return_instead=
             print(f"{suff}-phenomenon test score: {acc} | Successes: {succ} | F1: {f1}")
         else:
             return acc, f1, succ
-        
+
 
 def get_majority_vote(raw_scores):
     """
