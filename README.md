@@ -1,8 +1,8 @@
-# The No-Data Algorithm
-Code and data for the paper Labelling Data With Unkown References. 
-This paper shows that it is possible to ascertain trust in an evaluator via an algorithm (the No-Data Algorithm). The algorithm is a zero-knowledge proof; i.e., it is **cryptographically secure** (think of how authentication and blockchain are done). 
+# The Wizard of Odds
+Code and data for the paper XXXXX. 
+This paper shows that it is possible to ascertain trust in an evaluator via an algorithm (the Wizard of Odds). The algorithm is a zero-knowledge proof; i.e., it is **cryptographically secure** (think of how authentication and blockchain are done). 
 
-The paper some stats to show that it adjusts to the predictions (including LLMs-as-judges and reasoning models); including empirical tests (in `No-Data-Algorithm.ipynb`) and a sample application to a low-resource language (West Frisian, in `NLEvaluatorAM.ipynb`). The code in this repository is for repro purposes. 
+The paper some stats to show that it adjusts to the predictions (including LLMs-as-judges and reasoning models); including empirical tests (in `Wizard of Odds.ipynb`) and a sample application to a low-resource language (West Frisian, in `NLEvaluatorAM.ipynb`). The code in this repository is for repro purposes. 
 
 Please note that you will need to bring your own code (namely, API keys and whatnot) to call the models. To simplify this, you just need to modify `llmclient.py` as indicated.
 
