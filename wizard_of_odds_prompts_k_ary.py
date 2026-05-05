@@ -89,15 +89,15 @@ If the value for a key is 0, its corresponding reason cannot be empty.
 
 
 # Criteria are always binary
-from no_data_prompts import (output_format_specs_one_criteria,
-                             output_format_specs_one_criteria_with_reasons)
+from wizard_of_odds_prompts import (output_format_specs_one_criteria,
+                                    output_format_specs_one_criteria_with_reasons)
 
 
-from no_data_prompts import (check1, check2a, check2b, check2assembled, check3, check4, check5, 
-                            rubric_good_crit_map)
+from wizard_of_odds_prompts import (check1, check2a, check2b, check2assembled, check3, check4, check5, 
+                                    rubric_good_crit_map)
 
-from no_data_prompts import (fake_check1, fake_check2a, fake_check2b, fake_check3, fake_check4, fake_check5, 
-                            rubric_other_crit_map)
+from wizard_of_odds_prompts import (fake_check1, fake_check2a, fake_check2b, fake_check3, fake_check4, fake_check5, 
+                                    rubric_other_crit_map)
 
 
 good_rubric_nl = """{rubric_main}
